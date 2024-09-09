@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Pizzaria Pepperoni!</h1>
+    </header>
+
+    <section id="menu" class="text-center">
+        <h2>Escolha sua Pizza</h2>
+        <input type="text" id="pizzaNumber" placeholder="Digite o número da pizza (#1, #2...)" maxlength="3">
+        <button class="btn btn-danger" onclick="buscarPizza()">Buscar Pizza</button>
+        <div id="pizzaInfo"></div>
+    </section>
+
+    <section id="tradicionais" class="text-center">
+        <h2>Pizzas Tradicionais</h2>
+        <div id="carouselTradicionais" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="listaTradicionais"></div>
+            <a class="carousel-control-prev" href="#carouselTradicionais" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselTradicionais" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="especiais" class="text-center">
+        <h2>Pizzas Especiais</h2>
+        <div id="carouselEspeciais" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="listaEspeciais"></div>
+            <a class="carousel-control-prev" href="#carouselEspeciais" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselEspeciais" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="premium" class="text-center">
+        <h2>Pizzas Premium</h2>
+        <div id="carouselPremium" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" id="listaPremium"></div>
+            <a class="carousel-control-prev" href="#carouselPremium" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselPremium" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="pedido" class="text-center">
+        <h2>Seu Pedido</h2>
+        <div id="carrinho"></div>
+        <button class="btn btn-success" onclick="enviarPedido()">Fazer Pedido pelo WhatsApp</button>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.11/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="pizza.js"></script>
+</body>
+</html>

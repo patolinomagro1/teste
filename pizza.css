@@ -1,0 +1,164 @@
+/* Estilo Global */
+body {
+    font-family: 'Helvetica', Arial, sans-serif; /* Define a fonte padrão para o corpo da página */
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Define um gradiente como fundo da página */
+    padding: 20px; /* Adiciona espaçamento interno ao redor do corpo */
+    margin: 0; /* Remove as margens padrão da página */
+    display: flex; /* Usa o modelo flexbox para organizar o conteúdo */
+    flex-direction: column; /* Organiza o conteúdo verticalmente */
+    align-items: center; /* Centraliza os itens no centro horizontalmente */
+    justify-content: center; /* Centraliza os itens no centro verticalmente */
+    min-height: 100vh; /* Garante que o conteúdo ocupe pelo menos 100% da altura da tela */
+    color: #fff; /* Define a cor do texto como branco */
+}
+
+/* Estilo do Cabeçalho */
+header {
+    text-align: center; /* Centraliza o texto dentro do cabeçalho */
+    background-color: #ff6347; /* Define a cor de fundo do cabeçalho */
+    color: white; /* Define a cor do texto do cabeçalho como branco */
+    padding: 20px; /* Adiciona espaçamento interno ao cabeçalho */
+    width: 100%; /* O cabeçalho ocupa toda a largura disponível */
+    border-radius: 12px; /* Arredonda os cantos do cabeçalho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar profundidade */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do cabeçalho */
+}
+
+header h1 {
+    font-size: 1.8em; /* Define o tamanho da fonte para o título */
+    font-weight: bold; /* Deixa o título em negrito */
+    text-transform: uppercase; /* Converte o texto do título para maiúsculas */
+    letter-spacing: 2px; /* Aumenta o espaçamento entre as letras */
+}
+
+/* Seção de Escolha da Pizza */
+#menu {
+    width: 100%; /* A seção ocupa toda a largura disponível */
+    max-width: 600px; /* Define a largura máxima da seção como 600px */
+    text-align: center; /* Centraliza o conteúdo da seção */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da seção */
+}
+
+#menu input {
+    padding: 15px; /* Adiciona espaçamento interno ao campo de texto */
+    font-size: 1.1em; /* Aumenta o tamanho da fonte do campo de texto */
+    border: none; /* Remove as bordas padrão */
+    border-radius: 8px; /* Arredonda os cantos do campo de texto */
+    width: 90%; /* Define a largura do campo como 90% do contêiner */
+    max-width: 300px; /* Limita a largura máxima do campo a 300px */
+    margin-bottom: 15px; /* Adiciona espaço abaixo do campo de texto */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra ao campo de texto */
+}
+
+/* Estilo para todos os botões */
+.btn {
+    padding: 10px 20px; /* Adiciona espaçamento interno aos botões */
+    font-size: 1em; /* Define o tamanho da fonte do botão */
+    border: none; /* Remove as bordas padrão */
+    border-radius: 25px; /* Arredonda os cantos dos botões */
+    cursor: pointer; /* Altera o cursor para a mãozinha ao passar sobre o botão */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar profundidade */
+    transition: background-color 0.3s ease; /* Suaviza a transição da cor de fundo ao passar o mouse */
+}
+
+/* Estilo para botões secundários (busca pizza) */
+.btn-secondary {
+    background-color: #ff6347; /* Define a cor de fundo dos botões secundários */
+    color: white; /* Define a cor do texto como branco */
+}
+
+.btn-secondary:hover {
+    background-color: #ff4500; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo para botões primários (fazer pedido) */
+.btn-primary {
+    background-color: #4CAF50; /* Define a cor de fundo dos botões primários */
+    color: white; /* Define a cor do texto como branco */
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+}
+
+/* Estilo do Cardápio Completo */
+#todasPizzas {
+    margin-top: 40px; /* Adiciona espaço acima da seção do cardápio */
+    width: 100%; /* O cardápio ocupa toda a largura disponível */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+/* Estilo para os carrosséis */
+.carousel {
+    margin-bottom: 20px; /* Adiciona espaço abaixo dos carrosséis */
+}
+
+/* Estilo dos cartões das pizzas */
+.pizzaCard {
+    background-color: #ff7e5f; /* Define a cor de fundo do cartão como branco */
+    border-radius: 12px; /* Arredonda os cantos do cartão */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adiciona sombra para dar profundidade */
+    padding: 20px; /* Adiciona espaçamento interno ao cartão */
+    width: 100%; /* O cartão ocupa toda a largura disponível */
+    max-width: 250px; /* Limita a largura máxima do cartão a 250px */
+    text-align: center; /* Centraliza o conteúdo do cartão */
+    color: #333; /* Define a cor do texto como cinza escuro */
+    transition: transform 0.3s ease; /* Adiciona um efeito de transformação suave ao passar o mouse */
+}
+
+/* Efeito hover nos cartões de pizza */
+.pizzaCard:hover {
+    transform: scale(1.05); /* Aumenta levemente o cartão ao passar o mouse */
+}
+
+.pizzaCard h3 {
+    color: #fff; /* Define a cor do título da pizza */
+    font-size: 1.2em; /* Define o tamanho da fonte do título */
+    margin-bottom: 10px; /* Adiciona espaço abaixo do título */
+}
+
+.pizzaCard p {
+    font-size: 0.9em; /* Define o tamanho da fonte da descrição da pizza */
+    margin-bottom: 15px; /* Adiciona espaço abaixo da descrição */
+}
+
+/* Estilo do Carrinho */
+#pedido {
+    margin-top: 40px; /* Adiciona espaço acima da seção do pedido */
+    width: 100%; /* O carrinho ocupa toda a largura disponível */
+    max-width: 500px; /* Define a largura máxima do carrinho */
+    text-align: center; /* Centraliza o conteúdo da seção */
+}
+
+#carrinho {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do carrinho */
+}
+
+/* Estilo Mobile */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Diminui o preenchimento interno para dispositivos móveis */
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Reduz o tamanho da fonte do título para dispositivos móveis */
+    }
+
+    #menu input, 
+    #menu button, 
+    #pedido button {
+        width: 95%; /* Alarga os campos e botões para ocupar quase toda a largura em dispositivos móveis */
+    }
+
+    .pizzaCard {
+        width: 95%; /* Define que os cartões de pizza ocupam quase toda a largura disponível em dispositivos móveis */
+    }
+}
+
+/* Botões de Tamanho Pequeno, Médio e Grande */
+.btn-pequeno {
+    font-size: 0.5rem; /* Define o tamanho da fonte dos botões pequenos */
+    padding: 0.1rem 0.3rem; /* Adiciona espaçamento interno reduzido aos botões pequenos */
+    border-radius: 0.1rem; /* Arredonda levemente os cantos dos botões pequenos */
+    margin: 0.05rem; /* Adiciona pouco espaço entre os botões */
+}
